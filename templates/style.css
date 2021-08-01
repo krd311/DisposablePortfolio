@@ -1,7 +1,46 @@
+@font-face {
+  font-family: 'kanye';
+  src: url('kanye.ttf');
+}
+
 .navbar-bottom{
 	list-style: none;
 }
 
 .no-dec{
 	text-decoration: none;
+	color: black;
+	font-family: kanye;
+	text-transform: uppercase;
+}
+
+.navbar{
+	border-radius: 0;
+	height: 100%;
+}
+
+.left-column{
+	background-color: lightgray;
+	float: left;
+	width: 25%;
+	height: 100vh;
+	min-width: 125px;
+}
+
+.right-column{
+	background-color: darkgray;
+	float: left;
+	width: 75%;
+	height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;   
+    align-items: center;        
+}
+
+.camera-box{
+	height: 50%;
+	width: 50%;
+	background-color: black;
+	padding-top: 10%;
 }
