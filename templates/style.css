@@ -3,13 +3,6 @@
   src: url('kanye.ttf');
 }
 
-body,
-div {
-  margin: 0;
-  border: 0 none;
-  padding: 0;
-  /*background-color: lightgray;*/
-}
 
 .navbar-bottom{
 	list-style: none;
