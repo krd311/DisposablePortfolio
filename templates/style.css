@@ -3,6 +3,14 @@
   src: url('kanye.ttf');
 }
 
+body,
+div {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  /*background-color: lightgray;*/
+}
+
 .navbar-bottom{
 	list-style: none;
 }
@@ -24,29 +32,42 @@
 }
 
 .left-column{
-	background-color: white;
+	color: white;
 	float: left;
 	width: 20%;
 	height: 100vh;
-	min-width: 125px;
 }
 
 .right-column{
-	background-color: lightgray;
+	/*background-color: lightgray;*/
 	float: left;
 	width: 80%;
-	height: 100vh;
-  display: flex;
-  flex-direction: column; 
-  justify-content: top;   
-  align-items: center;    
-  padding-top: 7.5%;
+	display: grid;
+	grid-gap: 10px;
+}
+
+@media (min-width: 500px) {
+  .right-column { grid-template-columns: 1fr; }
+}
+
+
+@media (min-width: 750px) {
+  .right-column { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .right-column { grid-template-columns: repeat(3, 1fr); }
 }
 
 .resize {
-    width: 50%;
+    width: 100%;
     height: auto;
     position: relative;
+    padding-top: 10px;
+}
+
+.resize:hover{
+	cursor: pointer;
 }
 
 .caption-text{
@@ -54,5 +75,6 @@
 	font-family: "Courier New";
 	font-size: 15;
 	color: black;
+	text-align: center;
 }
 
