@@ -34,7 +34,8 @@
 .right-column{
 	/*background-color: lightgray;*/
 	float: left;
-	width: 80%;
+	width: 77%;
+	padding-right: 3%;
 	display: grid;
 	grid-gap: 10px;
 }
