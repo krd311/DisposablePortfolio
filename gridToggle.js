@@ -1,17 +1,9 @@
-function image1Focus(){
+function imageFocus(imgNum){
 	let link = document.getElementsByClassName("right-column")[0];
-	console.log(link);
-	let image = link.getElementsByClassName("image1");
+	console.log("set");
+	var imageClass = "image" + (imgNum);
+	let image = link.getElementsByClassName(imageClass);
 	image[0].style.gridColumnStart = '1';
-	image[0].style.gridColumnEnd = "3";
-
-	//image[0].setAttribute("onClick", "resetImage1Size()");
+	image[0].style.gridColumnEnd = "4";
 }
 
-function resetImage1Size(){
-	let link = document.getElementsByClassName("right-column")[0];
-	console.log("oh");
-	let image = link.getElementsByClassName("image1");
-	image[0].style.gridColumnStart = '1';
-	image[0].style.gridColumnEnd = "2";
-}

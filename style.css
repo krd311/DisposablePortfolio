@@ -39,17 +39,21 @@
 	grid-gap: 10px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   .right-column { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 500px) {
+  .right-column { grid-template-columns: repeat(2,1fr); }
 }
 
 
 @media (min-width: 750px) {
-  .right-column { grid-template-columns: repeat(2, 1fr); }
+  .right-column { grid-template-columns: repeat(3, 1fr); }
 }
 
 @media (min-width: 900px) {
-  .right-column { grid-template-columns: repeat(3, 1fr); }
+  .right-column { grid-template-columns: repeat(4, 1fr); }
 }
 
 .resize {
@@ -71,5 +75,12 @@
 	text-align: center;
 }
 
-.image1:on
+.arrow-text{
+	padding-top: 25px;
+	font-family: "Courier New";
+	font-size: 15;
+	color: black;
+	text-align: center;
+}
+
 
